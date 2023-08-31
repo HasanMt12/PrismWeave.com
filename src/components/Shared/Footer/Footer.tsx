@@ -2,13 +2,13 @@
 import Box from '@mui/material/Box';
 import { Grid, Typography, useMediaQuery } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import { Stack } from '@mui/system';
+
 const Footer = () => {
     const matches = useMediaQuery('(min-width:992px)');
     return (
         <Box sx={{width:"full", backgroundColor:"#FFFFFF",height:"auto",  marginTop:"15px",borderRadius:"5px", padding:"20px"}}>
             <Grid container direction="row" justifyContent="center" alignItems="center">
-                {matches ? (<Typography variant='h1' color='text.primary' >We <Typography variant='h1' color='primary.main' component='span'>Connect</Typography></Typography>) : (<Typography variant='h2' color='text.primary' >PrismWeave</Typography>)}
+                {matches ? (<Typography variant='h1' color='text.primary' >PrismWeave</Typography>) : (<Typography variant='h2' color='text.primary' >PrismWeave</Typography>)}
             </Grid>
         <Box >
             <Box>
