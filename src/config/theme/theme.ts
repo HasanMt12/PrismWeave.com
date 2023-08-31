@@ -35,40 +35,40 @@ import {   createTheme,} from "@mui/material";
     // for typography styles
     typography:{
         fontFamily: [
-            "DM Sans", "sans-serif"].join(","),
+            "Ubuntu", "sans-serif"].join(","),
           fontSize: 12,
         
         
           h1: {
-            fontFamily: ["DM Sans", "sans-serif"].join(","),
+            fontFamily: ["Ubuntu", "sans-serif"].join(","),
             fontSize: 28,
             fontWeight: "bold"
             
           },
           h2: {
-            fontFamily: ["DM Sans", "sans-serif"].join(","),
+            fontFamily: ["Ubuntu", "sans-serif"].join(","),
             fontSize: 20,
             fontWeight: "bold"
           },
           h3: {
-            fontFamily: ["DM Sans", "sans-serif"].join(","),
+            fontFamily: ["Ubuntu", "sans-serif"].join(","),
             fontSize: 16,
             fontWeight: "bold",
             color: "#96C2DB"
           },
           h4: {
-            fontFamily: ["DM Sans", "sans-serif"].join(","),
+            fontFamily: ["Ubuntu", "sans-serif"].join(","),
             fontSize: 14,
             fontWeight: "bold"
           },
           h5: {
-            fontFamily: ["DM Sans", "sans-serif"].join(","),
+            fontFamily: ["Ubuntu", "sans-serif"].join(","),
             fontSize: 12,
             fontWeight: '700',
             color:'rgba(4, 4, 21, 0.5)'
           },
           h6: {
-            fontFamily: ["DM Sans", "sans-serif"].join(","),
+            fontFamily: ["Ubuntu", "sans-serif"].join(","),
             fontSize: 10,
             fontWeight: '700'
             
@@ -108,7 +108,7 @@ import {   createTheme,} from "@mui/material";
         // personal typography
         MuiTypography:{
            defaultProps:{
-            fontFamily:"DM Sans",
+            fontFamily:"Ubuntu",
             color:'text.secondary'
            }
         }

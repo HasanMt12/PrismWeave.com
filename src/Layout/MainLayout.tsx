@@ -10,7 +10,7 @@ import MainRightAside from "../components/Shared/Sidebars/MainRightAside";
 import { MainResStyle, StickySidebar } from "../components/styled/Styled.common";
 
 
-const MainLayout = ({ theme}:any) => {
+const MainLayout = ({ theme}: any) => {
 
   return (
     <div >

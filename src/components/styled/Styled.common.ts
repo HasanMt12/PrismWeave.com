@@ -1,50 +1,13 @@
 import styled from "@emotion/styled"
 import { Theme } from "@material-ui/core";
 
-import { Box,Button, } from "@mui/material"
+import { Box, Button, IconButton } from "@mui/material"
 
 interface Props {
     theme: Theme;
   }
 
-export  const FlexBetween = styled(Box)({
-    display: "flex",
-    justifyContent:'space-between',
-    alignItems: 'center'
-})
 
-
-export const IconWrapper = styled('div')(({ theme }) => ({
-    "&:hover": {
-        fill: "#96C2DB"
-    },
-}));
-
-export const ActiveBtn = styled(Button)({
-    backgroundColor: "#96C2DB",
-    color: "#FFFFFF",
-    width: "100px",
-    fontWeight: "700",
-    fontSize: "14px",
-    lineHeight: "17px",
-})
-
-
-
-// story absolute
-
-export  const StoryHeardingStyle = styled(Box)({
-position:'absolute',
-bottom: '4px',
-right:'-4px',
-
-width: '100%',
-
-paddingLeft:'5px',
-       
-        alignItems: 'center',
-        justifyContent: 'center'
-})
 
 export const FlexCenter = styled(Box)({
     display: "flex",
@@ -85,4 +48,86 @@ export const FlexEvenly = styled(Box)({
     justifyContent: 'space-evenly',
     alignItems: 'center',
 
+})
+
+export  const FlexBetween = styled(Box)({
+    display: "flex",
+    justifyContent:'space-between',
+    alignItems: 'center'
+})
+
+export const SeconderyBtn = styled(Button)({
+    backgroundColor: "rgba(4, 4, 21, 0.2)",
+    color: "rgba(4, 4, 21, 0.6)",
+  
+    margin: 5,
+    "&:hover": {
+        backgroundColor: "#FF0000",
+        color: "#FFFFFF"
+    },
+    ' & @media(maxWidth: 768px)': {
+        backgroundColor: "rgba(255, 0, 0, 1)",
+    }
+})
+
+export const PrimaryBtn = styled(SeconderyBtn)({
+    backgroundColor: "#FF0000",
+        color: "#FFFFFF",
+        "&:hover": {
+            backgroundColor: "rgba(4, 4, 21, 0.2)",
+            color: "rgba(4, 4, 21, 0.6)",
+        },
+})
+
+
+export const ProfilePageBtn = styled(Button)({
+    backgroundColor: "rgba(4, 4, 21, 0.2)",
+    color: "rgba(4, 4, 21, 0.6)",
+    width:"4rem",
+    height:"2rem",
+    margin: 4,
+    "&:hover": {
+        backgroundColor: "#E5EDF1",
+        color: "#96C2DB"
+    },
+})
+
+export const PostBtn = styled(Button)({
+    backgroundColor: "#FF0000",
+    color: "#FFFFFF",
+    width: "126px",
+    height: "50px",
+    margin: 6,
+    "&:hover": {
+        backgroundColor: "rgba(4, 4, 21, 0.2)",
+        color: "rgba(4, 4, 21, 0.6)",
+    },
+})
+
+
+
+export const IconWrapper = styled('div')(({ theme }) => ({
+    "&:hover": {
+     fill: "#ff0000"
+    },
+}));
+
+export const ActiveBtn = styled(Button)({
+    backgroundColor: "#FF0000",
+    color: "#FFFFFF",
+    width: "100px",
+    fontWeight: "700",
+    fontSize: "14px",
+    lineHeight: "17px",
+})
+
+export const ProfileBtn = styled(IconButton)({
+    backgroundColor: "rgba(4, 4, 21, 0.2)",
+    color: "rgba(4, 4, 21, 0.6)",
+    height: "26px",
+    borderRadius: "5px",
+    margin:4,
+    // "&:hover": {
+    // backgroundColor: "rgba(4, 4, 21, 0.2)",
+    // },
 })
