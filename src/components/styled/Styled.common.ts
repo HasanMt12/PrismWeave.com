@@ -131,3 +131,89 @@ export const ProfileBtn = styled(IconButton)({
     // backgroundColor: "rgba(4, 4, 21, 0.2)",
     // },
 })
+export const FlexStart = styled(Box)({
+    display: "flex",
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    gap: 6,
+    marginTop: "-15px",
+    marginLeft: "5px"
+
+})
+
+// watch action absolute
+
+export const WatchActionStyle = styled(Box)({
+    position: 'absolute',
+    top: 4,
+
+})
+export const WatchGridContainer = styled(Box)({
+    display: 'grid',
+
+    gridTemplateColumns: 'repeat(6 , 1fr)',
+    marginTop: '5px',
+
+    gap: 4
+})
+
+export const WatchVideoActionStyle = styled(Box)({
+    position: 'absolute',
+    top: '40%',
+    left: "32%",
+    alignItems: 'center',
+    justifyContent: 'center',
+
+})
+
+export const WatchVideoGridContainer = styled(Box)({
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4 , 1fr)',
+    marginTop: "15px",
+    gap: 15
+})
+
+
+// story card styles
+
+export  const StoryGridContainer = styled(Box)({
+display:'grid',
+gridTemplateColumns: 'repeat(5 , 1fr)',
+gap: 10,
+marginTop:'10px',
+overflow: 'hidden'
+
+})
+
+export const StoryCardStyle =styled(Box)({
+    // width:' 140px',
+    maxWidth: '100%',
+    position:'relative',
+
+'& img':{
+    maxWidth: '100%',
+    maxHeight: '500px',
+    backgroundImage: 'linear-gradient(5.35deg, #040415 -20.4%, rgba(75, 75, 75, 0) 89.2%)',
+    borderRadius: '14px',
+   
+    '& box':{
+        position:'absolute',
+        top:'0',
+        height:'20px',
+        backgroundColor:'#ff00',
+        
+    }
+},
+
+})
+// story absolute
+
+export const StoryHeardingStyle = styled(Box)({
+    position: 'absolute',
+    top: '4px',
+    left: '-4px',
+    width: '100%',
+    paddingLeft: '5px',
+    alignItems: 'center',
+    justifyContent: 'center'
+})
