@@ -42,8 +42,8 @@ const Navbar = () => {
               alignItems:'center',
               display:'flex'
             }} xs={2.5}>
-              {matches? (<Typography variant='h1' color='text.primary' >PrismWeave</Typography>)
-              :(<Typography variant='h2' color='text.primary' >PrismWeave </Typography>)}
+              {matches? (<Typography variant='h1' color='text.primary' >SocialSync</Typography>)
+              :(<Typography variant='h2' color='text.primary' >SocialSync </Typography>)}
               
 
             </Grid>
@@ -121,7 +121,7 @@ const Navbar = () => {
                       <Avatar
                         style={{ cursor: "pointer" }}
 
-                        alt="Cindy Baker" src="https://i.ibb.co/PZnCgSM/Ellipse-1.png" >
+                        alt="Cindy Baker" src="https://i.ibb.co/0QZCv5C/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png" >
                       </Avatar>
                     </Link>
 

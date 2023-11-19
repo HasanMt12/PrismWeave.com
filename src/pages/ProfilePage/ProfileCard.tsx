@@ -74,15 +74,15 @@ const ProfileCard = () => {
         }
     };
     return (
-            <Box >
-                <Box sx={{marginTop: "-30%",}}> 
+        <Box >
+            <Box sx={{ marginTop: "-10%",  }}> 
                 <img 
-                        style={{ width:"65%", height: "65%",borderRadius:"100%",marginLeft:"17%",zIndex:"-1" }}
-                        src="https://i.ibb.co/Stt0WJY/profile.png"title="profile name" alt='' /> 
+                        style={{ width:"15%", height: "15%",borderRadius:"100%",marginLeft:"17%",zIndex:"-1" }}
+                    src="https://i.ibb.co/0QZCv5C/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black.png"title="profile name" alt='' /> 
             
                 </Box>
 
-                <Box sx={{ backgroundColor:"#FFFFFF", paddingTop:"35%", marginTop: "-37.5%",borderEndEndRadius:"5px",borderBottomLeftRadius:"5px",paddingBottom:"20px"}}>
+                <Box sx={{ backgroundColor:"#C0C0C080", paddingTop:"16%", marginTop: "-20.5%",borderEndEndRadius:"5px",borderBottomLeftRadius:"5px",paddingBottom:"20px"}}>
                    {matches?( <Typography variant='h1' align="center" sx={{color: "rgba(4, 4, 21, 0.8)",}}>
                                 Hasan Mahmud
                             </Typography>) : (<Typography variant='h3' align="center" sx={{ color: "rgba(4, 4, 21, 0.8)", }}>
@@ -99,20 +99,20 @@ const ProfileCard = () => {
                 <FlexEvenly>
                  
                     <Box>
-                        <Typography variant='h3' align="center" sx={{ color: "rgba(4, 4, 21, 0.8)" }}>
+                        <Typography variant='h3' align="center" sx={{ color: "rgba(4, 4, 21, 0.6)" }}>
                             2k
                         </Typography>
-                        <Typography variant='h4' align="center" sx={{ color: "rgba(4, 4, 21, 0.6)" }}>
+                        <Typography variant='h4' align="center" sx={{ color: 'text.primary' }}>
                             Follower
                         </Typography>
                     </Box>
 
                     <Box>
-                        <Typography variant='h3' align="center" sx={{ color: "rgba(4, 4, 21, 0.8)" }}>
+                        <Typography variant='h3' align="center" sx={{ color: "rgba(4, 4, 21, 0.6)" }}>
                             2k
                         </Typography>
-                        <Typography variant='h4' align="center" sx={{ color: "rgba(4, 4, 21, 0.6)" }}>
-                            Follower
+                        <Typography variant='h4' align="center" sx={{color: 'text.primary'  }}>
+                            Following
                         </Typography>
                     </Box>
                 </FlexEvenly>

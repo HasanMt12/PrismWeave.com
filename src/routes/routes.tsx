@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import {  createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import HomePage from "../pages/homePage/HomePage";
 import ProfileLayout from "../Layout/ProfileLayout";
@@ -7,30 +7,44 @@ import ClubPage from "../pages/ClubPage/ClubPage";
 import FollowPage from "../pages/FollowPage/FollowPage";
 import WatchPage from "../pages/WatchPage/WatchPage";
 import Message from "../pages/Message/Message";
+import SignupPage from "../Auth/SignUp";
+import AuthLayout from "../Layout/AuthLayout";
+
 
 const routes = createBrowserRouter([
+  {
+    path: '/',
+    element: <AuthLayout />,
+    children: [
+      {
+        path: '/',
+        element: <SignupPage />,
+      },
+ 
+    ]
+  },
     {
-        path:'/',
+        path:'/home',
         element: <MainLayout  />,
         children:[
           {
-            path:'/',
-            element: <HomePage/>
+            path:'/home',
+            element: <HomePage />,
           },
           {
-            path: '/club',
+            path: '/home/club',
             element: <ClubPage></ClubPage>,
           },
           {
-            path: '/follow',
+            path: '/home/follow',
             element: <FollowPage></FollowPage>
           },
           {
-            path: '/watch',
+            path: '/home/watch',
             element: <WatchPage></WatchPage>
           },
           {
-            path: '/message',
+            path: '/home/message',
             element: <Message></Message>
           },
         ]
@@ -47,6 +61,14 @@ const routes = createBrowserRouter([
          
     ]
   },
+  // {
+  //   path: '/login',
+  //   element: <LoginPage />,
+  // },
+  // {
+  //   path: '/signup',
+  //   element: <SignupPage />,
+  // },
 ])
 
 export default routes

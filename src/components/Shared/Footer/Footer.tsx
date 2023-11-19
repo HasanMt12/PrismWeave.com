@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <Box sx={{width:"full", backgroundColor:"#FFFFFF",height:"auto",  marginTop:"15px",borderRadius:"5px", padding:"20px"}}>
             <Grid container direction="row" justifyContent="center" alignItems="center">
-                {matches ? (<Typography variant='h1' color='text.primary' >PrismWeave</Typography>) : (<Typography variant='h2' color='text.primary' >PrismWeave</Typography>)}
+                {matches ? (<Typography variant='h1' color='text.primary' >SocialSync</Typography>) : (<Typography variant='h2' color='text.primary' >SocialSync</Typography>)}
             </Grid>
         <Box >
             <Box>
@@ -29,7 +29,7 @@ const Footer = () => {
                 </Box>
             </Grid>
             </Box>
-                {matches ? (<Typography variant='h4' align='center' color='rgba(4, 4, 21, 0.5)' sx={{ marginTop: "60px" }}>Copyright © 2023 – PrismWeave </Typography>) : (<Typography variant='h5' align='center' color='rgba(4, 4, 21, 0.5)' sx={{ marginTop: "60px" }}>Copyright © 2023 – Mild Technology</Typography>)}
+                {matches ? (<Typography variant='h4' align='center' color='rgba(4, 4, 21, 0.5)' sx={{ marginTop: "60px" }}>Copyright © 2023 – SocialSync </Typography>) : (<Typography variant='h5' align='center' color='rgba(4, 4, 21, 0.5)' sx={{ marginTop: "60px" }}>Copyright © 2023 – Mild Technology</Typography>)}
            
         </Box>
             

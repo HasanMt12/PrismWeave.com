@@ -4,9 +4,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import ProfileAside from '../components/Shared/Sidebars/ProfileAside';
 import { Container } from '@mui/material';
-
-
-
+import ProfileCard from "../pages/ProfilePage/ProfileCard";
 
 const ProfileLayout = () => {
     return (
@@ -14,11 +12,17 @@ const ProfileLayout = () => {
 
             <Navbar></Navbar>
     
-         <img  style={{ width:"100%", height: "400px",}} alt='s' src='https://i.ibb.co/3rYFMzc/Rectangle-24.png'></img> 
+            
                    
                    <Container maxWidth="xl">
-
-
+                <Box sx={{ width: '100%', mx: 'auto' }}>
+                    <img
+                        style={{ width: '100%', height: '450px' }}
+                        alt='cover'
+                        src='https://i.ibb.co/Kjn65SX/cover.png'
+                    />
+                    <ProfileCard />
+                </Box>
 
                    <Grid container spacing={2}>  
                         <Grid item xs={4} md={4} >
